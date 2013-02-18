@@ -24,7 +24,7 @@ So this is my take on a build-able static site blog thing whatever. This is insp
 
 You have ONE DATABASE... called whatever... and INSIDE... is ONE TABLE: posts. That's it. See the [create_db.sql](create_db.sql) file for info, but it's fairly simple.
 
-Rename config.sample.php to config.php. The config.php file contains all of your standard options. Blog name. Number of posts on the index page. Database connection settings.
+**Rename config.sample.php to config.php.** The config.php file contains all of your standard options. Blog name. Number of posts on the index page. Database connection settings.
 
 The build.php file does all the heavy work. It does all of the steps in one script. It...
 
@@ -33,7 +33,7 @@ The build.php file does all the heavy work. It does all of the steps in one scri
 1. builds each individual blog post page
 1. builds the index page while it's doing that
 1. also builds the RSS feed XML while it's doing that
-1. writes out the individual blog pages, the index page, and the rss XML to static HTML files
+1. writes out the individual blog pages, the index page, and the rss XML to static files
 1. copies all the stuff in the "other" directory (css files, images, static content) to the output directory
 
 Then it's done. In the "output" directory, you'll have a complete site.
@@ -42,7 +42,7 @@ The helpers.php file has some nice helper functions.
 
 ## So how to run your blog using this
 
-First, set up the database, and write your posts somewhere in HTML. Insert your posts into the database. Personally, I write my posts in Markdown or straight HTML and then paste them into phpMyAdmin.
+First, set up the database, and write your posts somewhere in HTML. Insert your posts into the database. Personally, I write my posts in Markdown or straight HTML and then paste them into phpMyAdmin. (The *publishdate* and *lastedited* fields are expecting Unix timestamps.)
 
 Via shell, run:
 
@@ -54,7 +54,7 @@ Upload the contents to your web server (or Amazon S3 now that it can run sites w
 
 ## Note about templating
 
-Theming this thing is stupid easy, I think. I've included most of the config options and lol.css for my fuck advocacy blog redesign, which this statiblog is probably going to replace.
+Theming this thing is stupid easy, I think. I've included most of the config options and lol.css for my [fuck advocacy blog](http://fuckadvocacy.com/) redesign, which this statiblog is probably going to replace.
 
 Obviously before you use this on your site you'll want to go through and edit out my crap from the template files.
 
