@@ -6,7 +6,7 @@ Short for STATIC BLOG, lol.
 
 Yes, I'm serious. And yes, it's hilarious. As web developers, we went from static content sites to dynamic sites to dynamic sites that compile to static sites back to dynamic sites and now we're going back to static sites.
 
-So this is my take on a build-able static site blog thing whatever.
+So this is my take on a build-able static site blog thing whatever. This is inspired by a few I've seen online, like Don Melton's [Magneto](https://github.com/donmelton/magneto).
 
 ## This currently works best for...
 
