@@ -1,0 +1,101 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+a:link, a:visited {
+	color: inherit;
+	text-decoration: underline;
+}
+a:hover, a:active {
+	color: #a00;
+}
+div#header {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+div#header h1, #footer {
+	font-size: 12px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: italic;
+	color: #999;
+}
+div#footer {
+	text-align: right;
+	margin: 20px;
+}
+div#footer p {
+	line-height: 1.6;
+}
+div#header h1 a:link, div#header h1 a:visited {
+	text-decoration: none;
+}
+div#months {
+	width: 500px;
+	margin: 50px auto;
+}
+div.post {
+	width: 500px;
+	margin: 50px auto 100px auto;
+}
+div.post h3, div#months h3 {
+	font-family: "Vollkorn", serif;
+	font-weight: 400;
+	font-style: italic;
+	font-size: 2em;
+}
+div#months h3 {
+	margin-top: 50px;
+}
+div.post h3 a:link, div.post h3 a:visited {
+	text-decoration: none;
+}
+div.post p, div#months p, div.post li {
+	font-family: "PT Serif", serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: justify;
+	margin-bottom: 1em;
+	color: #333;
+}
+div#months p {
+	text-align: left;
+}
+div.post li {
+	margin-bottom: 0;
+}
+div.post ul, div.post ol {
+	margin-bottom: 1em;
+}
+div.post img {
+	max-width: 500px;
+	height: auto;
+}
+div.post p.post-dateby {
+	font-weight: 400;
+	font-size: 12px;
+	color: #999;
+	text-align: right;
+	margin-bottom: 20px;
+}
+@media only screen and (max-width: 500px) {
+	
+	div.post {
+		width: auto;
+		margin: 50px 0;
+		padding: 20px;
+	}
+	
+	div.post p {
+		font-size: 14px;
+	}
+	
+	div#months {
+		width: auto;
+		margin: 50px 0;
+		padding: 20px;
+	}
+	
+}
