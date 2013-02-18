@@ -40,6 +40,18 @@ Then it's done. In the "output" directory, you'll have a complete site.
 
 The helpers.php file has some nice helper functions.
 
+## So how to run your blog using this
+
+First, set up the database, and write your posts somewhere in HTML. Insert your posts into the database. Personally, I write my posts in Markdown or straight HTML and then paste them into phpMyAdmin.
+
+Via shell, run:
+
+    php build.php
+    
+Whoa. It'll build. The results will be in your "output" directory.
+
+Upload the contents to your web server (or Amazon S3 now that it can run sites wholesale), or if you're on your web server, point the web root to that "output" directory. That's it.
+
 ## Note about templating
 
 Theming this thing is stupid easy, I think. I've included most of the config options and lol.css for my fuck advocacy blog redesign, which this statiblog is probably going to replace.
@@ -48,5 +60,5 @@ Obviously before you use this on your site you'll want to go through and edit ou
 
 ## Features needed
 
-- a friendlier way of adding posts to the posts database, right now it's manual
+- a friendlier way of adding posts to the posts database, right now it's manual, which might suck for most people
 - further separation of templates from the build script
