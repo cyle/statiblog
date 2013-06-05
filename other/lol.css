@@ -14,7 +14,12 @@ div#header {
 	top: 10px;
 	left: 10px;
 }
-div#header h1, #footer {
+div#about {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+div#header h1, #footer, #about {
 	font-size: 12px;
 	font-family: "Lato", sans-serif;
 	font-weight: 400;
@@ -39,11 +44,15 @@ div.post {
 	width: 500px;
 	margin: 50px auto 100px auto;
 }
-div.post h3, div#months h3 {
+div.post h3, div#months h3, div.post h4 {
 	font-family: "Vollkorn", serif;
 	font-weight: 400;
 	font-style: italic;
 	font-size: 2em;
+}
+div.post h4 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
 }
 div#months h3 {
 	margin-top: 50px;
@@ -80,6 +89,14 @@ div.post p.post-dateby {
 	text-align: right;
 	margin-bottom: 20px;
 }
+div.post blockquote {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+div.post blockquote p {
+	font-style: italic;
+	color: #777;
+}
 @media only screen and (max-width: 500px) {
 	
 	div.post {
@@ -88,7 +105,7 @@ div.post p.post-dateby {
 		padding: 20px;
 	}
 	
-	div.post p {
+	div.post p, div.post li {
 		font-size: 14px;
 	}
 	
@@ -96,6 +113,19 @@ div.post p.post-dateby {
 		width: auto;
 		margin: 50px 0;
 		padding: 20px;
+	}
+	
+	div.post img {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	div.post li {
+		margin-left: 15px;
+	}
+	
+	iframe {
+		max-width: 100%
 	}
 	
 }

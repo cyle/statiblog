@@ -57,7 +57,7 @@ while ($post_row = $get_posts->fetch_assoc()) {
 	$post_content_section .= '</div>'."\n";
 	
 	// compile the damn page
-	$post_file_contents .= str_replace('{page_title}', $blog_title . ' - ' . $post_row['title'], $head_file_contents)."\n";
+	$post_file_contents .= str_replace('{page_title}', $post_row['title'] . ' - ' . $blog_title, $head_file_contents)."\n";
 	$post_file_contents .= $header_file_contents."\n";
 	$post_file_contents .= $post_content_section."\n";
 	$post_file_contents .= $footer_file_contents."\n";
